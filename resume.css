@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(195, 211, 235);
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: arial, sans-serif;
+}
+
+.contact {
+  background-color: rgb(139, 176, 232);
+  text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 3px solid rgb(224, 224, 224);
+  align-content: center;
+}
+
+.tab button {
+  float: left;
+  background-color: rgb(139, 176, 232);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 14px 16px;
+  margin: 5px;
+  transition: margin-left 1s, margin-right 1s, background-color 1s;
+}
+
+.tab button:hover {
+  background-color: rgb(255, 255, 255);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid rgb(214, 214, 214);
+}
+
+.tab button.active {
+  background-color: rgb(76, 130, 212);
+}
+
+.content {
+  display: none;
+}
+
+h1 {
+  font-family: verdana, sans-serif;
+  font-size: 24px;
+}
+
+.date {
+  font-style: italic;
+}
