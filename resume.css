@@ -44,6 +44,16 @@ body {
 
 .content {
   display: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.left-half {
+  float: left;
+}
+
+.right-half {
+  float: right;
 }
 
 h1 {

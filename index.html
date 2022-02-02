@@ -17,36 +17,72 @@
 
   <div class="tab">
     <button onclick="displayContent(event, 'About Me')" class="tabBtn" id="default">About Me</button>
-    <button onclick="displayContent(event, 'Experience')" class="tabBtn">Experience</button>
     <button onclick="displayContent(event, 'Education')" class="tabBtn">Education</button>
+    <button onclick="displayContent(event, 'Experience')" class="tabBtn">Experience</button>
     <button onclick="displayContent(event, 'Leadership')" class="tabBtn">Leadership</button>
     <button onclick="displayContent(event, 'PDF')" class="tabBtn">PDF</button>
   </div>
 
   <div class="content" id="About Me">
-    <h1>Abe Stroschein</h1>
-    <h2>Background</h2>
-    <ul>
-      <li>From Waconia, MN</li>
-      <li>Living in St. Paul, MN</li>
-      <li>Enjoy mountain biking, climbing, games, and movies</li>
-    </ul>
+    <div class="left-half">
+      <h1>Abe Stroschein</h1>
+      <h2>Background</h2>
+      <ul>
+        <li>From Waconia, MN</li>
+        <li>Living on campus at the University of St. Thomas in St. Paul, MN</li>
+        <li>Enjoy mountain biking, climbing, games, and movies</li>
+      </ul>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/Ajstros">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/abe-stroschein-a270051a9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWtDb1lY2RACrb7lFyIe27g%3D%3D">LinkedIn</a></li>
+        <li>Email: <a href="mailto:ajstros@gmail.com" target="blank">ajstros@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="right-half">
+      <h1>Projects</h1>
+      <h2>car-cost-comparison (Python)</h2>
+      <ul>
+        <li>Created at MIT hackathon 2021</li>
+        <li>Plot the cost of driving different cars based on fuel consumption, fuel price, and initial price</li>
+        <li>GitHub: <a href="https://github.com/Ajstros/car-cost-comparison">https://github.com/Ajstros/car-cost-comparison</a></li>
+      </ul>
+
+      <h2>CovidDataUST (Python)</h2>
+      <ul>
+        <li>Web scrape and plot COVID cases at the Univresity of St. Thomas over time</li>
+        <li>GiHub: <a href="https://github.com/Ajstros/CovidDataUST">https://github.com/Ajstros/CovidDataUST</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="content" id="Experience">
-    <h1>Research Intern, University of St. Thomas</h1>
-    <p class="date">May 25, 2021 - Present</p>
+    <h1>Undergraduate Research Intern, University of St. Thomas</h1>
+    <p class="date">May 26, 2021 - Present</p>
     <ul>
       <li>Digital ion channel amplifier project under Dr. Lucas Koerner</li>
-      <li>Python host control programming and design</li>
-      <li>Verilog control programming</li>
-      <li>Use GitHub version control</li>
+      <li>Design Python architecture and implement host control programming</li>
+      <li>Implement Verilog SPI communication controller</li>
+      <li>Communicate host computer to FPGA to peripheral ICs via SPI, I2C</li>
     </ul>
+    <p>Currently, I am working with Dr. Koerner to submit a part of this
+      project to the <a href="https://joss.theoj.org/">Journal of Open Source</a> (JOSS) for publication. That part allows for the use of
+      named internal registers and endpoints on the chips to correspond
+      to the numerical values required for communication. Names are assigned
+      to registers in a spreadsheet where the user can enter the address and
+      bit indices of the register. A similar system is used to manage <a href="https://opalkelly.com/products/frontpanel/">Opal
+      Kelly FrontPanel API</a> endpoints instantiated in the Verilog. A Verilog
+      file filled with definitions assigns the registers names to be used
+      in Python and Verilog, and such a definitions file can be generated
+      from a spreadsheet set up much like the one for registers. We are
+      hoping to make the package available on <a href="https://pypi.org/">PyPI</a> and publish in JOSS
+      in the coming months.</p>
 
     <h1>Web Intern, University of St. Thomas</h1>
     <p class="date">March 1, 2021 - May 21, 2021</p>
     <ul>
-      <li>Create webpages, news, events on OneStThomas</li>
+      <li>Create webpages, news, events on OneStThomas intranet</li>
     </ul>
 
     <h1>Sunday Custodian, Faith Lutheran Church</h1>
@@ -54,23 +90,27 @@
     <ul>
       <li>Prepare church for service, refreshments, and cleanup</li>
     </ul>
-    <h1>Programming</h1>
-    <p>I coded this webpage from scratch using HTML, CSS, and JS.
-      I also have some experience with the Python, C, Matlab, and Java. Here
-      is a link to a <a href="https://github.com/Ajstros/CovidDataUST" target="blank"
-        style="background-color: rgb(139, 176, 232);">University of St. Thomas covid tracker</a> I made using web
-      scraping in Python.</p>
   </div>
 
   <div class="content" id="Education">
     <h1>Computer Engineering Major at St. Thomas University (Sophomore)</h1>
-    <p class="date">September 9, 2020 - Present</p>
+    <p class="date">September 2020 - May 2024 (In Progress)</p>
     <ul>
-      <li>1 of 4 Science Scholars</li>
+      <li>Current Overall GPA: 4.0</li>
+      <li>1 of 4 Science Scholars (<a href="https://www.stthomas.edu/admissions/undergraduate/financial-aid/scholarships/future-students/science-math-engineering/">Science, Math and Enginering Scholarship)</a></li>
       <li>Aquinas Scholars Honors</li>
       <li>Symphonic Wind Ensemble</li>
+      <li>Rock Climbing Club</li>
       <li>Computer Science Club</li>
-      <li>Current GPA: 4.0</li>
+    </ul>
+
+    <h1>High School Diploma at Waconia High School</h1>
+    <p class="date">September 2015 - May 2020</p>
+    <ul>
+      <li>Overall GPA: 4.0</li>
+      <li>Boy Scouts of America -  Senior Patrol Leader for 6 months (see Leadership tab)</li>
+      <li>National Honors Society, Trap Shooting Team</li>
+      <li>Wind Ensemble, Jazz Band, Drumline, Show Choir Band, Pit Band</li>
     </ul>
   </div>
 
