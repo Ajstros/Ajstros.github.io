@@ -56,6 +56,12 @@ body {
   float: right;
 }
 
+@media all and (max-width: 1625px) {
+  .right-half {
+      float: left;
+  }
+}
+
 h1 {
   font-family: verdana, sans-serif;
   font-size: 24px;
