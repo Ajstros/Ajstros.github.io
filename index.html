@@ -19,6 +19,7 @@
     <button onclick="displayContent(event, 'About Me')" class="tabBtn" id="default">About Me</button>
     <button onclick="displayContent(event, 'Education')" class="tabBtn">Education</button>
     <button onclick="displayContent(event, 'Experience')" class="tabBtn">Experience</button>
+    <button onclick="displayContent(event, 'Projects')" class="tabBtn">Projects</button>
     <button onclick="displayContent(event, 'Leadership')" class="tabBtn">Leadership</button>
     <button onclick="displayContent(event, 'PDF')" class="tabBtn">PDF</button>
   </div>
@@ -41,7 +42,7 @@
     </div>
 
     <div class="right-half">
-      <h1>Projects</h1>
+      <h1>Personal Projects</h1>
       <h2>car-cost-comparison (Python)</h2>
       <ul>
         <li>Created at MIT hackathon 2021</li>
@@ -84,6 +85,28 @@
     <p class="date">August 20, 2017 - August 23, 2020</p>
     <ul>
       <li>Prepare church for service, refreshments, and cleanup</li>
+    </ul>
+  </div>
+
+  <div class="content" id="Projects">
+    <h1>Automated Phone Locker</h1>
+    <ul>
+      <li>User locks phone in motorized drawer using keypad with LCD feedback and phone weight detection</li>
+      <li>Programmed an Arm Cortex M4 on a STM board in C</li>
+      <li>Used built-in ADC, timer, interrupts, GPIO to control motion sensor, load cells, keypad, LCD, servo motors, and more</li>
+    </ul>
+
+    <h1>Square to Sine Wave Op-Amp Filter</h1>
+    <ul>
+      <li>Converts square wave to sine wave with the same frequency and double the amplitude</li>
+      <li>Used Fourier Series to calculate bandpass frequency</li>
+      <li>Designed PCB using Multisim and Ultiboard</li>
+    </ul>
+
+    <h1>FPGA VGA Display Script</h1>
+    <ul>
+      <li>Displays user-controlled color background and moving box over VGA using clock dividers and state machines</li>
+      <li>Developed, simulated, and synthesized Verilog hardware model</li>
     </ul>
   </div>
 
